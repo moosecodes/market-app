@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('category');
             $table->decimal('price', 8, 2);
             $table->integer('quantity')->default(0);
+            $table->string('imageUrl')->default('https://via.placeholder.com/150');
             $table->timestamps();
         });
     }
